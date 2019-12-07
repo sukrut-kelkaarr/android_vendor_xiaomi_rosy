@@ -573,8 +573,6 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libthermalclient \
     QtiTelephonyService \
-    imssettings \
-    uceShimService \
     CNEService \
     WfdService \
     ims \
