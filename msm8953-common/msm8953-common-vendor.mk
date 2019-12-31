@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8953-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/xiaomi/msm8953-common/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
     vendor/xiaomi/msm8953-common/proprietary/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcrilhook.jar \
-    vendor/xiaomi/msm8953-common/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/xiaomi/msm8953-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptXHD_encoder.so \
     vendor/xiaomi/msm8953-common/proprietary/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptX_encoder.so \
@@ -603,11 +602,11 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     WfdService \
     CneApp \
-    IWlanService \    
-    PowerOffAlarm \
+    IWlanService \
     TimeService \
-    dpmserviceapp \    
+    PowerOffAlarm \
+    dpmserviceapp \
     ims \
-    qcrilmsgtunnel \    
+    qcrilmsgtunnel \
     WfdCommon \
     chargeonlymode
