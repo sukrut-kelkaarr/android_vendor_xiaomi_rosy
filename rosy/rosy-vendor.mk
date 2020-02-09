@@ -18,8 +18,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/rosy
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rosy/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
-    vendor/xiaomi/rosy/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:system/lib64/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/rosy/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/rosy/proprietary/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/rosy/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/xiaomi/rosy/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/xiaomi/rosy/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
@@ -103,6 +103,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rosy/proprietary/vendor/etc/ftm_test_config_msm8953-sku4-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_msm8953-sku4-snd-card \
     vendor/xiaomi/rosy/proprietary/vendor/etc/ftm_test_config_mtp:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_mtp \
     vendor/xiaomi/rosy/proprietary/vendor/etc/ftm_test_config_wcd9335:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_wcd9335 \
+    vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8006m_boe_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8006m_boe_5p7_720p_video.xml \
+    vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8613_csot_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8613_csot_5p7_720p_video.xml \
+    vendor/xiaomi/rosy/proprietary/vendor/etc/qdcm_calib_data_ft8613_ebbg_5p7_720p_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8613_ebbg_5p7_720p_video.xml \
     vendor/xiaomi/rosy/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/xiaomi/rosy/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/rosy/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
@@ -968,7 +971,4 @@ PRODUCT_PACKAGES += \
     libts_detected_face_hal \
     libts_face_beautify_hal \
     FingerprintExtensionService \
-    com.fingerprints.extension \
-    qdcm_calib_data_ft8006m_boe_5p7_720p_video \
-    qdcm_calib_data_ft8613_csot_5p7_720p_video \
-    qdcm_calib_data_ft8613_ebbg_5p7_720p_video
+    com.fingerprints.extension
